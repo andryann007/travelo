@@ -12,6 +12,8 @@ import androidx.appcompat.widget.Toolbar
 import com.example.travelo.model.ModelTravel
 import com.google.firebase.crashlytics.FirebaseCrashlytics
 import com.squareup.picasso.Picasso
+import java.text.NumberFormat
+import java.util.*
 
 class DetailActivity : AppCompatActivity() {
     private lateinit var toolbar : Toolbar
@@ -71,9 +73,12 @@ class DetailActivity : AppCompatActivity() {
         travelDetailOpenTime = findViewById(R.id.travelDetailOpenTime)
         travelDetailOpenTime.text = "Open Time : $openTime"
 
-        val price : String = data?.price.toString()
+        val currencyFormat = NumberFormat.getCurrencyInstance(Locale("id", "ID"))
+        currencyFormat.currency = Currency.getInstance("IDR")
+        val price : Int = data?.price!!.toInt()
+        val priceCurrency = currencyFormat.format(price)
         travelDetailPrice = findViewById(R.id.travelDetailPrice)
-        travelDetailPrice.text = "Price : $price"
+        travelDetailPrice.text = "Price : $priceCurrency"
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
