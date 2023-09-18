@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "928611387880",
+    "firebase_url": "https://travelo-5ddc9-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "travelo-5ddc9",
+    "storage_bucket": "travelo-5ddc9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928611387880:android:7189012ab87768e2a07c5d",
+        "android_client_info": {
+          "package_name": "com.example.travelo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJPGqVDep0iUh0WluMH_t-7r7qNNwxpTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/profileToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:logo="@drawable/back"
+        app:title="@string/my_profile"
+        app:titleMarginStart="32dp"
+        app:titleTextColor="@color/white"
+        app:titleTextAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        style="@style/ThemeOverlay.Material3.Toolbar.Surface"/>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/CardView.Dark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbarStyle="insideInset">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/profileTitle"
+                        style="@style/TextAppearance.MaterialComponents.Headline6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:paddingHorizontal="10dp"
+                        android:text="@string/profile_title"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profileImg"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="10dp"
+                        android:src="@drawable/profile" />
+
+                    <TextView
+                        android:id="@+id/profileName"
+                        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2.5dp"
+                        android:paddingHorizontal="10dp"
+                        android:text="@string/profile_name"
+                        android:textAlignment="center"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/profileEmail"
+                        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:paddingHorizontal="10dp"
+                        android:text="@string/profile_email"
+                        android:textAlignment="center"
+                        android:textColor="@color/white" />
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:background="?android:attr/listDivider"
+                        android:backgroundTint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/profileDescTitle"
+                        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="2.5dp"
+                        android:paddingHorizontal="10dp"
+                        android:text="@string/profile_desc_title"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/profileDesc"
+                        style="@style/TextAppearance.MaterialComponents.Caption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:paddingHorizontal="10dp"
+                        android:text="@string/profile_desc"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/profileContact"
+                        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="2.5dp"
+                        android:paddingHorizontal="10dp"
+                        android:text="@string/profile_contact"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:id="@+id/btnEmail"
+                            style="@style/Widget.MaterialComponents.Button"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_marginVertical="1dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/profile_email_logo"
+                            android:src="@drawable/email" />
+
+                        <ImageView
+                            android:id="@+id/btnWhatsapp"
+                            style="@style/Widget.MaterialComponents.Button"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_marginVertical="1dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/profile_wa_logo"
+                            android:src="@drawable/whatsapp" />
+
+                        <ImageView
+                            android:id="@+id/btnInstagram"
+                            style="@style/Widget.MaterialComponents.Button"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_marginVertical="1dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/profile_ig_logo"
+                            android:src="@drawable/instagram" />
+
+                        <ImageView
+                            android:id="@+id/btnLinkedIn"
+                            style="@style/Widget.MaterialComponents.Button"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_marginVertical="1dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/profile_linkedin_logo"
+                            android:src="@drawable/linkedin" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+        </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

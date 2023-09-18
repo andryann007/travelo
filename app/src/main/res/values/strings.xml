@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Travelo</string>
+    <string name="travel_img_thumbnail">Travel Image Thumbnail</string>
+    <string name="travel_title">Ancol</string>
+    <string name="profile_name">Nama : Andryan</string>
+    <string name="profile_email">Email : andryancoolz@gmail.com</string>
+    <string name="profile_title">About Me</string>
+    <string name="profile_desc_title">Deskripsi Singkat :</string>
+    <string name="profile_desc">Halo semua, perkenalkan nama saya Andryan. Cita" saya adalah menjadi Android Developer, dikarenakan saya memiliki passion yang tinggi dalam pengembangan aplikasi mobile khususnya Android. Oleh sebab itu saya mengikuti program beasiswa IDCamp alur belajar Android Developer untuk mendapatkan pengetahuan dan pengalaman menjadi seorang Android Developer sesuai dengan standar dan kebutuhan industri</string>
+    <string name="profile_contact">Informasi Kontak :</string>
+    <string name="profile_email_logo">Contact Email Logo</string>
+    <string name="profile_wa_logo">Contact Whatsapp Logo</string>
+    <string name="profile_ig_logo">Contact Instagram Logo</string>
+    <string name="profile_linkedin_logo">Contact LinkedIn Logo</string>
+    <string name="my_profile">My Profile</string>
+    <string name="detail_travel">Detail Travel</string>
+    <string name="test_crash">Test Crash</string>
+    <string name="share_travel">Share Travel</string>
+</resources>
